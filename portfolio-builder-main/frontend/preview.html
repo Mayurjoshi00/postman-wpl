@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio Preview</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Portfolio Builder</a>
+        <a href="builder.html" class="btn btn-outline-light btn-sm">Edit</a>
+    </div>
+</nav>
+
+<div class="container py-5 fade-in">
+
+    <!-- Profile Image + Name + Bio + Social Links -->
+    <div class="text-center mb-4">
+        <img id="profileImage"
+     class="rounded-circle mb-3"
+     width="120"
+     height="120"
+     style="object-fit: cover; display: none;">
+        <h1 id="previewName"></h1>
+        <p id="previewBio" class="bio-text"></p>
+
+        <a id="githubProfile" href="#" target="_blank"
+           class="btn btn-outline-dark btn-sm me-2">GitHub</a>
+        <a id="linkedinProfile" href="#" target="_blank"
+           class="btn btn-outline-primary btn-sm">LinkedIn</a>
+    </div>
+
+    <hr>
+
+    <!-- Education -->
+    <h3>Education</h3>
+    <div class="card p-3 mb-4">
+        <h5 id="eduDegree"></h5>
+        <p id="eduCollege"></p>
+        <small id="eduYear"></small>
+    </div>
+
+    <!-- Experience -->
+    <h3>Experience</h3>
+    <div class="card p-3 mb-4">
+        <h5 id="expRoleText"></h5>
+        <p id="expCompanyText"></p>
+        <p id="expDescText"></p>
+    </div>
+
+    <!-- Skills -->
+    <h3>Skills</h3>
+    <div id="skillsContainer"></div>
+
+    <!-- Projects -->
+    <h3 class="mt-4">Projects</h3>
+    <div id="projectsContainer"></div>
+
+    <!-- Download Button -->
+    <div class="text-center mt-5">
+        <button class="btn btn-primary" onclick="window.print()">
+            Download / Print Portfolio
+        </button>
+    </div>
+
+</div>
+
+<script src="js/preview.js"></script>
+</body>
+</html>
